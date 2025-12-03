@@ -12,11 +12,11 @@ export const signUpSchema = z.object({
             }, { message: "Email already exists." }),
         password: z
             .string()
-            .min(5, { message: 'Password must be at least 5 characters long' })
+            .min(5, { message: 'Password must be at least 5 characters long.' })
             .trim(),
         name: z
             .string()
-            .min(1, { message: "Name is required" })
+            .min(1, { message: "Name is required." })
             .trim()
     })
 });
