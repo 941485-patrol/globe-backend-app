@@ -29,7 +29,7 @@ To run this application, you will need to have Docker and Docker Compose install
 3.  **Run the application:**
 
     ```bash
-    docker-compose up -d
+    docker-compose up -d --build
     ```
 
     This command will build the Docker image and start the application in detached mode. The API will be accessible at `http://localhost:3000`.
@@ -66,3 +66,25 @@ The following is a list of the available API endpoints:
 | GET    | `/todo/task/:taskId` | Get a specific task by ID.   |
 | PUT    | `/todo/task/:taskId` | Update a specific task by ID.|
 | DELETE | `/todo/task/:taskId` | Delete a specific task by ID.|
+
+## Seeding the Database
+
+To populate the database with initial data, you can use the seed script.
+
+1.  **Ensure your `.env` file is correctly set up.** Make sure the `MONGODB_URI` variable in your `.env` file points to your MongoDB instance.
+
+2.  **Compile the TypeScript code:**
+
+    ```bash
+    npm run compile
+    ```
+
+3.  **Run the seed script:**
+
+    ```bash
+    npm run seed
+    ```
+
+    After seeding, you can log in with the following credentials:
+    *   **Email:** `userone@email.com`
+    *   **Password:** `password`
