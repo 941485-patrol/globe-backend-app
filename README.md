@@ -1,6 +1,6 @@
-# Node.js API with Express, MongoDB, and TypeScript
+# Node.js API with Express with Socket IO, MongoDB, and TypeScript
 
-This is a RESTful API built with Node.js, Express, MongoDB, and TypeScript. It provides user authentication and task management functionalities.
+This is a RESTful API built with Node.js, Express, MongoDB, and TypeScript. It provides user authentication and task management functionalities. It also has SOCKET IO installed for seamless updating of data in the frontend.
 
 ## Getting Started with Docker
 
