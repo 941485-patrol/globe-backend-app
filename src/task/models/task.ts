@@ -14,6 +14,7 @@ const taskSchema = new Schema<TaskInterface>(
         title: {
             type: String,
             required: true,
+            index: true
         },
         description: {
             type: String,
